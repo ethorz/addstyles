@@ -4,7 +4,7 @@
 
 Module use pure javascript code without dependents.
 
-[![npm install addstyles](https://nodei.co/npm/add-font.png?mini=true)](https://npmjs.org/package/addstyles/)
+[![npm install addstyles](https://nodei.co/npm/addstyles.png?mini=true)](https://npmjs.org/package/addstyles/)
 
 ## Usage
 ```js
