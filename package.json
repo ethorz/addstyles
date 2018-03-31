@@ -1,6 +1,6 @@
 {
   "name": "addstyles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Insert CSS styles into an HTML document and register new font-face for the current web page by URL",
   "main": "index.js",
   "scripts": {
