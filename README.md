@@ -2,7 +2,7 @@
 
 > Insert CSS styles into an HTML document and register new font-face for the current web page by URL.
 
-Module use pure javascript code without dependents.
+Module use pure javascript (ES6) code without dependents.
 
 [![npm install addstyles](https://nodei.co/npm/addstyles.png?mini=true)](https://npmjs.org/package/addstyles/)
 

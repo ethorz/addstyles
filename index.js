@@ -1,6 +1,6 @@
 const cache = {};
 
-export default {
+const addStyles = {
     addFont: (src, styles) => {
         let extensions = ['eot', 'woff', 'woff2', 'ttf', 'svg', 'otf'];
         let format = {
@@ -74,7 +74,7 @@ export default {
 
         let id = [name, getStyle(styles), getWeight(styles)].join('-');
 
-        this.insertStyles(`
+        addStyles.insertStyles(`
             @font-face {
                 font-family: "${name}";
                 ${srcStr};
@@ -105,4 +105,9 @@ export default {
             element.styleSheet.cssText = styles
         }
     }
-}
+};
+
+export default addStyles;
+
+export const insertStyles = addStyles.insertStyles;
+export const addFont = addStyles.addFont;
