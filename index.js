@@ -1,7 +1,7 @@
 const cache = {};
 
 export default {
-    addFont(src, styles) {
+    addFont: (src, styles) => {
         let extensions = ['eot', 'woff', 'woff2', 'ttf', 'svg', 'otf'];
         let format = {
             eot: 'embedded-opentype',
@@ -82,7 +82,7 @@ export default {
             }
         `, {id: id});
     },
-    insertStyles(styles, options) {
+    insertStyles: (styles, options) => {
         function createStyle(id) {
             let element = document.getElementById(id);
 
