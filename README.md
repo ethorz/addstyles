@@ -1,4 +1,4 @@
-# addstyles [![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
+# addstyles [![unstable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
 > Insert CSS styles into an HTML document and register new font-face for the current web page by URL.
 
@@ -28,8 +28,8 @@ addStyles.addFont('./wavefont.otf', 'wavefont');
 
 #### `insertStyles(styles, [options]) -> void`
 
-#### addFont(fontUrl, cssString|fontName)
-#### addFont(fontUrlList, cssString|fontName)
+#### `addFont(fontUrl, cssString|fontName)`
+#### `addFont(fontUrlList, cssString|fontName)`
 
 Attach font to the page, apply additional parameters, which are whether font name or @font-face properties, eg font-family: <x>; font-style: <y>; font-weight: <z>.
 ##### styles
