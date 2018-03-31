@@ -1,10 +1,10 @@
 {
   "name": "addstyles",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Insert CSS styles into an HTML document and register new font-face for the current web page by URL",
-  "main": "index.js",
+  "main": "dist/addstyles.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,11 @@
   "bugs": {
     "url": "https://github.com/ethorz/addstyles/issues"
   },
-  "homepage": "https://github.com/ethorz/addstyles#readme"
+  "homepage": "https://github.com/ethorz/addstyles#readme",
+  "devDependencies": {
+    "babel-cli": "6.9.0",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.9.0",
+    "webpack": "1.13.1"
+  }
 }
