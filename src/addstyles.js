@@ -41,8 +41,8 @@ const addStyles = {
             return slug.slice(idx);
         }
 
-        let name = getFamily(styles);
-        let ext = extname(src);
+        const name = getFamily(styles);
+        const ext = extname(src);
         let urls = [];
 
         if (Array.isArray(src)) {
@@ -60,9 +60,9 @@ const addStyles = {
 
         let srcStr = 'src: ';
         for (let i = 0; i < urls.length; i++) {
-            let url = urls[i];
-            let ext = extname(url);
-            let filepath = url.slice(0, -ext.length);
+            const url = urls[i];
+            const ext = extname(url);
+            const filepath = url.slice(0, -ext.length);
             if (ext === '.eot') {
                 srcStr += `url("${filepath + '.eot'}");\n`;
                 srcStr += `src: url("${filepath + '.eot?#iefix'}") format("${format.eot}"),\n`;
@@ -71,8 +71,7 @@ const addStyles = {
             }
         }
         srcStr = srcStr.trim().slice(0, -1);
-
-        let id = [name, getStyle(styles), getWeight(styles)].join('-');
+        const id = [name, getStyle(styles), getWeight(styles)].join('-');
 
         addStyles.insertStyles(`
             @font-face {
@@ -80,7 +79,7 @@ const addStyles = {
                 ${srcStr};
                 ${styles}
             }
-        `, {id: id});
+        `, {id});
     },
     insertStyles: (styles, options) => {
         function createStyle(id) {
